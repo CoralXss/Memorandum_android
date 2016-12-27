@@ -1,0 +1,62 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!-- 无padding的activity内容 -->
+    <style name="ActivityContentNoPadding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:background">@color/color_ffffff</item>
+    </style>
+
+    <!-- 横线样式 -->
+    <style name="ItemLineHorizontalStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_line_size</item>
+        <item name="android:background">@color/color_item_line</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 竖线样式 -->
+    <style name="ItemLineVerticalStyle">
+        <item name="android:layout_width">@dimen/item_line_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_item_line</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--弹出框/加载框效果-->
+    <style name="dialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--popWindow 弹出和隐藏动画-->
+    <style name="popWindowAnimFromBottomStyle">
+        <!--显示动画-->
+        <item name="android:windowEnterAnimation">@anim/anim_pop_window_show</item>
+        <!--隐藏动画-->
+        <item name="android:windowExitAnimation">@anim/anim_pop_window_hidden</item>
+    </style>
+
+</resources>

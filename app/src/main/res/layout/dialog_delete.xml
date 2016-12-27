@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/ActivityContentNoPadding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您确定要删除该条数据吗？"
+        android:textColor="@color/color_3d3e40"
+        android:textSize="@dimen/txt_size18"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginPadding20"
+        android:layout_marginBottom="@dimen/marginPadding20" />
+
+    <LinearLayout
+        style="@style/ItemLineHorizontalStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/marginPadding10"
+        android:layout_marginRight="@dimen/marginPadding10">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/color_3d3e40"
+            android:textSize="@dimen/txt_size16"
+            android:layout_marginRight="@dimen/marginPadding20"/>
+        <LinearLayout
+            style="@style/ItemLineVerticalStyle" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/color_3d3e40"
+            android:textSize="@dimen/txt_size16"/>
+    </LinearLayout>
+</LinearLayout>

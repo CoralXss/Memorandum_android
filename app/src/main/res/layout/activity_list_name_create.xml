@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityContentNoPadding"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+<!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="pin" />  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/marginPadding20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginPadding10"
+            android:layout_marginTop="@dimen/marginPadding10"
+            android:text="清单名称"
+            android:textColor="@color/color_3d3e40"
+            android:textSize="@dimen/txt_size14" />
+
+        <EditText
+            android:id="@+id/edt_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/color_3d3e40"
+            android:textSize="@dimen/txt_size16" />
+
+        <LinearLayout
+            style="@style/ItemLineHorizontalStyle"
+            android:layout_marginBottom="@dimen/marginPadding10"
+            android:layout_marginTop="@dimen/marginPadding8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginPadding10"
+            android:gravity="center|left"
+            android:text="清单类型"
+            android:textColor="@color/color_3d3e40"
+            android:textSize="@dimen/txt_size14" />
+
+        <GridView
+            android:id="@+id/card_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#eeeeee"
+            android:gravity="center"
+            android:numColumns="2" />
+    </LinearLayout>
+</LinearLayout>
